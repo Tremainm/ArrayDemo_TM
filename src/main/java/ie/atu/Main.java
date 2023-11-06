@@ -1,8 +1,14 @@
 package ie.atu;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args)
     {
+
+        Scanner scanner = new Scanner(System.in);
+
+
         int[] array1;
         array1 = new int [10];
 
@@ -27,5 +33,10 @@ public class Main {
         System.out.println("Element at index 7 is: " + array1[7]);
         System.out.println("Element at index 8 is: " + array1[8]);
         System.out.println("Element at index 9 is: " + array1[9]);
+
+        System.out.println("Enter new element: ");
+        array1[10] = scanner.nextInt();
+
+
     }
 }
